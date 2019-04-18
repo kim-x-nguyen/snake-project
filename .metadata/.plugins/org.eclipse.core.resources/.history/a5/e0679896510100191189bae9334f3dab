@@ -1,0 +1,23 @@
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+public class GameScreen extends JPanel implements Runnable{
+	
+	int a = 0;
+
+	
+	public GameScreen() {
+
+		run();
+	}
+	public void paint(Graphics g) {
+		g.fillRect(a, 10, 100, 100);
+	}
+	public void run() {
+		while(true) {
+			a++;
+			System.out.println(String.valueOf(a));
+		}
+	}
+}

@@ -1,0 +1,12 @@
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+public class GameScreen extends JPanel{
+	public GameScreen() {
+		
+	}
+	public void paint(Graphics g) {
+		g.fillRect(10, 10, 100, 100);
+	}
+}
